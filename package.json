@@ -1,0 +1,11 @@
+{
+  "name": "notepads-n-things",
+  "version": "1.0.0",
+  "description": "Sales history lookup application",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/**/*.test.js"
+  },
+  "author": "Will Hackett",
+  "license": "ISC"
+}
