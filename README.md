@@ -18,7 +18,7 @@ Optionally run tests:
 Using the CLI and Node, Notepad 'n' Things staff can query the sales data JSON file.
 
 Display the total sales reported by the flagship store in Chadstone:
-`./query sales_data.json --centre Chadstone`
+`./query sales_data.json --centre "Chadstone"`
 
 Display the centre which had the most sales:
 `./query sales_data.json --best totalSales`

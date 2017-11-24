@@ -65,7 +65,7 @@ try {
     console.log(`
       Total Sales:\t${totals.sales}
       Total Area: \t${totals.area}
-      Total PSM:  \t${totals.psm}
+      Total Sales PSM:\t${totals.psm}
     `);
   } else {
     console.table(
@@ -75,7 +75,7 @@ try {
         'Total Sales': store.totalSales,
         Unit: store.unit,
         Area: store.area,
-        PSM: store.psm,
+        'Sales PSM': store.psm,
       }))
     );
   }
