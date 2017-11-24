@@ -61,23 +61,23 @@ try {
   }
 
   /* eslint-disable */
-  console.table(
-    data.map(store => ({
-      State: store.state,
-      Centre: store.centre,
-      'Total Sales': store.totalSales,
-      Unit: store.unit,
-      Area: store.area,
-      PSM: store.psm,
-    }))
-  );
-
   if (calculateTotals) {
     console.log(`
       Total Sales:\t${totals.sales}
       Total Area: \t${totals.area}
       Total PSM:  \t${totals.psm}
     `);
+  } else {
+    console.table(
+      data.map(store => ({
+        State: store.state,
+        Centre: store.centre,
+        'Total Sales': store.totalSales,
+        Unit: store.unit,
+        Area: store.area,
+        PSM: store.psm,
+      }))
+    );
   }
 
   /* eslint-enable */

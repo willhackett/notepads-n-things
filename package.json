@@ -4,7 +4,8 @@
   "description": "Sales history lookup application",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "NODE_ENV=development node index.js",
+    "build": "yarn && chmod +x ./query",
     "test": "mocha --opts ./test/mocha.opts ./test/**/*.test.js"
   },
   "author": "Will Hackett",
