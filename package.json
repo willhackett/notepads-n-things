@@ -4,8 +4,17 @@
   "description": "Sales history lookup application",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test/**/*.test.js"
+    "start": "node index.js",
+    "test": "mocha --opts ./test/mocha.opts ./test/**/*.test.js"
   },
   "author": "Will Hackett",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "console.table": "^0.9.1",
+    "mocha": "^4.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.11.0"
+  }
 }
