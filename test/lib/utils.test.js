@@ -38,7 +38,7 @@ describe('lib/utils.compareObjects', () => {
   it('should accurately compare functions', done => {
     const function1 = () => 'some result'
     const function2 = () => 'some other result'
-    
+
     expect(compareObjects({ a: function1 }, { a: function1 })).to.be.true
     expect(compareObjects({ a: function1 }, { a: function2 })).to.be.false
     done()

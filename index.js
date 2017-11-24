@@ -7,7 +7,6 @@ const {
   isEmptyObject,
 } = require('./lib/utils');
 const {
-  find,
   findIndex,
   findAll,
   findHighest
@@ -61,6 +60,7 @@ try {
     data = findHighest(data, process.argv[best + 1]);
   }
 
+  /* eslint-disable */
   console.table(
     data.map(store => ({
       State: store.state,
@@ -79,6 +79,8 @@ try {
       Total PSM:  \t${totals.psm}
     `);
   }
+
+  /* eslint-enable */
 
 } catch (err) {
   error(err);
