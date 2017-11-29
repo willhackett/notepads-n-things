@@ -1,4 +1,9 @@
-const { isArray, compareObjects, objectContains } = require('../../lib/utils')
+const NotepadsNThings = require('../../NotepadsNThings')
+const NT = new NotepadsNThings(false)
+
+const isArray = NT.isArray
+const compareObjects = NT.compareObjects
+const objectContains = NT.objectContains
 
 const testCollection = [
   { a: 'one', two: 'three' },

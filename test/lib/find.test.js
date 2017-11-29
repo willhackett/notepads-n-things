@@ -1,4 +1,9 @@
-const { find, findAll, findHighest } = require('../../lib/find')
+const NotepadsNThings = require('../../NotepadsNThings')
+const NT = new NotepadsNThings(false)
+
+const find = NT.find;
+const findAll = NT.findAll;
+const findHighest = NT.findHighest;
 
 const testCollection = [
   { a: 'one', two: 'three', x: 1 },
